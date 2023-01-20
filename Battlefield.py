@@ -26,15 +26,13 @@ class Battlefield:
                 self.robot.attack(self.dinosaur)
             elif self.dinosaur.health == 0:
                 break
-            elif self.robot.health >= self.dinosaur.health:      
-                break
             elif self.robot.health >= 49: 
                 self.dinosaur.attack(self.robot)
             elif self.dinosaur.health == 0:
                 break
             elif self.robot.health == 0:      
                 break
-                self.robot.attack(self.dinosaur)
+           
 
     
             
@@ -46,4 +44,4 @@ class Battlefield:
 
     def display_winner(self):
         print( "The winner is {self.name} there health was {self.health}")
-        
+   
